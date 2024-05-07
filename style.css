@@ -11,7 +11,15 @@ animation-direction:normal;/*7で解説*/
     text-align: center;
     line-height: 100vh;
 }
-
+.change{
+    animation-name:changeAnime;
+    animation-fill-mode:forwards;
+    animation-duration:3s;
+    animation-iteration-count:1;
+    animation-timing-function:ease;
+    animation-delay: 15s;
+    animation-direction:normal;
+}
 /*1で解説*/
 @keyframes fadeInAnime{
   0% {
@@ -20,5 +28,14 @@ animation-direction:normal;/*7で解説*/
 
   100% {
     opacity: 1;
+  }
+}
+@keyframes changeAnime{
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
