@@ -1,78 +1,24 @@
-* {
-    /* cursor: none */
-}
-
-body {
-    overflow: hidden
-}
-h1{
-    text-align: center;
-}
-button{
-
-}
-a:hover{
-    position: relative;
-    top: 5px;
-    left: 5px;
-    box-shadow: none;
-}
-a{
-    text-align: center;
-    line-height: 60px;
-    width: 150px;
-    height: 60px;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+.fadeIn {
+animation-name: fadeInAnime;/*1で解説*/
+animation-fill-mode:backwards;/*2で解説*/
+animation-duration:3s;/*3で解説*/
+animation-iteration-count:infinite;/*4で解説*/
+animation-timing-function:ease;/*5で解説*/
+animation-delay: 0.5s;/*6で解説*/
+animation-direction:normal;/*7で解説*/
     font-size: 24px;
-    display: block;
-    margin: 0 auto;
-    background-color: yellow;
-    width: 150px;
-    height: 60px;
-    border-radius: 5px;
-    border: #fff782 2px double;
-    box-shadow: #000 5px 5px;
-    font-family:'Courier New', Courier, monospace
-}
-    
-.loading {
-    background-color: #FFF;
-    width: 100%;
-    display: fixed
+    color: #999;
+    text-align: center;
+    line-height: 100vh;
 }
 
-.loading img {
-    display: block;
-    min-height: 209px;
-    min-width: 200px;
-}
+/*1で解説*/
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
 
-.mouse {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    background-color: #fff782;
-    position: absolute;
-    animation: mouseAnimation .5s infinite ease-in-out alternate;
-    /* left: 0; */
-    /* top: 0 */
-}
-
-@keyframes mouseAnimation {
-    
-    from {
-        width: 25px;
-        height: 25px
-    }
-    
-    to {
-        width: 15px;
-        height: 15px
-    }
-    
-}
-h1{
-    z-index: 100000;
+  100% {
+    opacity: 1;
+  }
 }
