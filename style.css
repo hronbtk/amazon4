@@ -4,7 +4,7 @@ animation-fill-mode:backwards;/*2で解説*/
 animation-duration:3s;/*3で解説*/
 /* animation-iteration-count:infinite;/*4で解説*/ */
 animation-timing-function:ease;/*5で解説*/
-animation-delay: 10s;/*6で解説*/
+animation-delay: 15s;/*6で解説*/
 animation-direction:normal;/*7で解説*/
     font-size: 24px;
     color: #999;
