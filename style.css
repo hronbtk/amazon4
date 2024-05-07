@@ -1,45 +1,49 @@
 .fadeIn {
-animation-name: fadeInAnime;/*1で解説*/
-animation-fill-mode:backwards;/*2で解説*/
-animation-duration:3s;/*3で解説*/
-/* animation-iteration-count:infinite;/*4で解説*/ */
-animation-timing-function:ease;/*5で解説*/
-animation-delay: 15s;/*6で解説*/
-animation-direction:normal;/*7で解説*/
-    font-size: 24px;
-    color: #999;
-    text-align: center;
-    line-height: 100vh;
-}
-.change{
-    animation-name:changeAnime;
-    animation-fill-mode:forwards;
-    animation-duration:3s;
-    animation-iteration-count:1;
-    animation-timing-function:ease;
-    animation-delay: 15s;
-    animation-direction:normal;
-    font-size: 24px;
-    color: #999;
-    text-align: center;
-    line-height: 100vh;
-}
-/*1で解説*/
-@keyframes fadeInAnime{
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes changeAnime{
-  0% {
-    display:block;
-  }
-
-  100% {
-    display:none;
-  }
-}
+    animation-name: fadeInAnime;/*1で解説*/
+    animation-fill-mode:backwards;/*2で解説*/
+    animation-duration:3s;/*3で解説*/
+    /* animation-iteration-count:infinite;/*4で解説*/ */
+    animation-timing-function:ease;/*5で解説*/
+    animation-delay: 13s;/*6で解説*/
+    animation-direction:normal;/*7で解説*/
+        font-size: 24px;
+        color: #999;
+        text-align: center;
+        line-height: 100vh;
+    }
+    .change{
+        animation-name:changeAnime;
+        animation-fill-mode:forwards;
+        animation-duration:3s;
+        animation-iteration-count:1;
+        animation-timing-function:ease;
+        animation-delay: 10s;
+        animation-direction:normal;
+        font-size: 24px;
+        color: #999;
+        text-align: center;
+        line-height: 100vh;
+    }
+    /*1で解説*/
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+        display: none;
+      }
+    
+      100% {
+        opacity: 1;
+        display: block;
+      }
+    }
+    @keyframes changeAnime{
+      0% {
+        display:block;
+        opacity: 1;
+      }
+    
+      100% {
+        display:none;
+        opacity: 0;
+      }
+    }
